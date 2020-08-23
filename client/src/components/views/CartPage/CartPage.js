@@ -7,7 +7,7 @@ import {
 } from '../../../_actions/user_actions';
 import UserCardBlock from './Sections/UserCardBlock';
 import { Result, Empty } from 'antd';
-// import Paypal from '../../utils/Paypal';
+import Paypal from '../../utils/Paypal';
 
 
 function CartPage(props) {
@@ -120,16 +120,16 @@ function CartPage(props) {
 
             {/* Paypal Button */}
 
-            {/* {ShowTotal &&
+            {ShowTotal &&
 
-                // <Paypal
-                //     toPay={Total}
-                //     onSuccess={transactionSuccess}
-                //     transactionError={transactionError}
-                //     transactionCanceled={transactionCanceled}
-                // />
+                <Paypal
+                    toPay={Total}
+                    onSuccess={transactionSuccess}
+                    transactionError={transactionError}
+                    transactionCanceled={transactionCanceled}
+                />
 
-            } */}
+            }
 
 
 
